@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "tag": "dôvera_prihlasenie",
+      "patterns": ["prilasenie", "Chcem sa prihlasit", "stranka prihlasenia", "Prihlas ma", "Login", "Idem sa prihlásiť", "kde sa registrujem", "kde sa prihlasim", "ako sa prihlásim", "pomoz mi sa prihlásiť", "registrovat"],
+      "response": ["https://ep.dovera.sk/Login.aspx?ReturnUrl=%2f", "https://ep.dovera.sk/Login"]
+    },
+    {
+      "tag": "dôvera_poistenie",
+      "patterns": ["Chcem poistenie", "chcel by som sa poistit", "Ako sa poistiť", "Chcem byt poistenec", "Chcem sa poistit", "Chcem zmeniť poisťovňu", "Chcem sa prepoistit","chcel by som sa stat poistencom"],
+      "response": ["https://prihlaska.dovera.sk/formular", "https://www.dovera.sk/poistenec/poistite-sa-za-3-minuty"]
+    },
+    {
+      "tag": "dôvera_benefity",
+      "patterns": ["benefity", "chcem vidieť benefity", "Aké benefity ma Dôvera", "Ukay mi vsetky benefity", "Aký ma Dôvera najlepší benefit"],
+      "response": ["https://www.dovera.sk/poistenec/preco-byt-v-dovere#vsetky", "https://www.dovera.sk/poistenec/benefity/vsetky/vratime-az-300-eur-za-lieky-rodicom-aj-detom"]
+    },
+    {
+      "tag": "dôvera_pobocky",
+      "patterns": ["pobocky", "chcem pobocku", "ukáž mi stránku pobočiek", "chcem vidieť všetky pobočky", "mozem vidiet stranku pobociek?"],
+      "response": ["https://www.dovera.sk/pobocky", "https://www.dovera.sk/pobocky"]
+    },
+    {
+      "tag": "dôvera_poradenie",
+      "patterns": ["poradenie", "chcem poradit", "potrebujem poradit", "chcem sa poradit", "potrebujem si poradit", "mozem ziskat poradenie?", "moze mi niekto poradit?", "chcel by som sa poradit", "chcel by som poradit", "chcel by som poradit"],
+      "response": ["https://www.dovera.sk/poistenec/potrebujem-poradit", "https://www.dovera.sk/poistenec"]
+    },
+    {
+      "tag": "dôvera_kontakt",
+      "patterns": ["kontakt", "chcem váš kontakt", "potrebujem váš kontakt", "chcel by som váš kontakt", "potrebujem kontakt"],
+      "response": ["https://www.dovera.sk/poistenec/potrebujem-poradit/kontakt", "https://www.dovera.sk/poistenec/potrebujem-poradit/kontakt"]
+    }
+  ]
+}
