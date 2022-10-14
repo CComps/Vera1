@@ -29,6 +29,11 @@
       "tag": "dôvera_kontakt",
       "patterns": ["kontakt", "chcem váš kontakt", "potrebujem váš kontakt", "chcel by som váš kontakt", "potrebujem kontakt"],
       "response": ["https://www.dovera.sk/poistenec/potrebujem-poradit/kontakt", "https://www.dovera.sk/poistenec/potrebujem-poradit/kontakt"]
+    },
+    {
+      "tag": "dôvera_zmluva",
+      "patterns": ["zmluva", "chcem zmluvu", "potrebujem zmluvu", "chcel by som zmluvu", "potrebujem zmluvu"],
+      "response": ["https://www.dovera.sk/poistenec/potrebujem-poradit/kontakt", "https://www.dovera.sk/poistenec/potrebujem-poradit/kontakt"]
     }
   ]
 }
