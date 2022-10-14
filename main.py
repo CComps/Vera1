@@ -126,15 +126,20 @@ while True:
     else:
         ints = predict_class(message)
         res = get_response(ints, intents)
+
         with open("log.log", "a", encoding="utf-8") as f:
             f.write(f"Text: {message}; AI: {res};\n")
-        VeraPrinText(res)
-        time.sleep(0.5)
-        say("chceš otvoriť túto stránku?")
-        otst = takeCommand()
-        if "áno" in otst:
-            say("Ok!")
-            webbrowser.open(res)
-            break
+        # check if the res is a url
+        if "http" in res:
+            VeraPrinText(res)
+            time.sleep(0.5)
+            say("chceš otvoriť túto stránku?")
+            otst = takeCommand()
+            if "áno" in otst:
+                say("Ok!")
+                webbrowser.open(res)
+                break
+            else:
+                say("Tak akú stránku hľadáš?")
         else:
-            say("Tak akú stránku hľadáš?")
+            say(res)
